@@ -32,9 +32,9 @@ int main()
 
     //for ()
     {
-        //One uppercase letter
-        //One lowercase letter
-        //One digit
+        //One uppercase letter, kirjota jokainen aakkonen
+        //One lowercase letter, kirjota jokainen aakkonen
+        //One digit, kirjota jokainen numero
         //One special character (e.g., !@#$%^&*)
 
         /*POHDINTA:
