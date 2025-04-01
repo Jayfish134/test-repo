@@ -7,15 +7,15 @@ namespace MathOperations //Defining a namespace called MathOperations
 {
     void add(int a, int b) {//Returns the sum of two integers
         int sum = a+b; //Defining the program of the function. Adding a and b together.
-        std::cout << "The sum: " << sum << std::endl; //Printing the output
+        cout << "The sum: " << sum << endl; //Printing the output
     }
 }
 
 namespace TextOperations 
 {
     void concat(string str1, string str2) { //Concatenates two strings
-        std::string concatenated_str = str1 + " " + str2; //Defining the program of the function. Concatenation of the strings, and putting an empty space between the strings.
-        std::cout << "The concatenated string: " << concatenated_str << std::endl; //Printing the output
+        string concatenated_str = str1 + " " + str2; //Defining the program of the function. Concatenation of the strings, and putting an empty space between the strings.
+        cout << "The concatenated string: " << concatenated_str << endl; //Printing the output
     }
 }
 
