@@ -8,7 +8,7 @@ int main()
     float a, b; // Defining variables
     char op; // Defining the operator character
 
-    cout << "Input two numbers and an operator" << endl; // Printing out sintructions for the user
+    cout << "Input two numbers and an operator" << endl; // Printing out intructions for the user
     cout << "Number input 1: ";
     cin >> a; // Getting the first number from user
     cout << "Number input 2: ";
