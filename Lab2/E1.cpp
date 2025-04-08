@@ -6,12 +6,12 @@ int multiply(int a, int b) // Function that returns the product of two integers
     return a * b;
 }
 
-double multiply(double a, double b) // Function that returns the product of two doubles
+double multiply(double a, double b) // Overloaded function that returns the product of two doubles
 {
     return a * b;
 }
 
-double multiply(int a, double b, bool flag) // Function that returns the product of an integer and a double with "optional" rounding of the number
+double multiply(int a, double b, bool flag) // Overloaded function that returns the product of an integer and a double with "optional" rounding of the number
 {
     if(flag == false) // If the value of the flag is false, the product is returned as a double, so without any rounding of the value
     {
