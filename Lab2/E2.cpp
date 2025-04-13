@@ -21,7 +21,7 @@ void swapUsingPointers(float *c, float *d)
     cout << "c is now " << *c << " and d is now " << *d << endl; // Printing out the swapped values
 }
 
-// Creating a function to swap two floating values uring references
+// Creating a function to swap two floating values using references
 void swapUsingReferences(float &e, float &f)
 {
     float refE = e; // Creating a float variable refE and storing the value of the variable referenced by e to it
@@ -45,3 +45,13 @@ int main()
 
     return 0;
 }
+
+/*In the first approach the values a and b are not actually swapped, the
+values are just copied.
+
+In the second approach the addresses are swapped, so the values are swapped.
+
+In the third approach the references are swapped, so the values are swapped.
+
+The second and third are the suitable approaches for swapping the values of
+two floating values, but the third one is the cleanest approach.*/
