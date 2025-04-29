@@ -39,6 +39,7 @@ class Car
         virtual void input()
         {
             inputBasic();
+            cout << endl;
         }
         
         // Another function that I had to create to make this entire program work
@@ -72,12 +73,13 @@ class ElectricCar : public Car
             // The additional questions for the user unique to this class
             cout << "Enter battery size (kWh): ";
             cin >> batterySize;
+            cout << endl;
         }
 
         virtual void display() const override
         {
             displayBasic(); // Calling the basic display function
-            cout << ", Battery: " << batterySize << endl; // Additional information unique to this class
+            cout << ", Battery: " << batterySize << " kWh" << endl; // Additional information unique to this class
         }
 };
 
@@ -104,12 +106,13 @@ class GasCar : public Car
                 // The additional questions for the user unique to this class
                 cout << "Enter fuel capacity (L): ";
                 cin >> fuelCapacity;
+                cout << endl;
             }
 
             void display() const override
             {
                 displayBasic(); // Calling the basic display function
-                cout << ", Fuel: " << fuelCapacity << endl; // Additional information unique to this class
+                cout << ", Fuel: " << fuelCapacity << " L" << endl; // Additional information unique to this class
             }
     
 };
@@ -141,12 +144,13 @@ class HybridCar : public Car
 
             cout << "Enter fuel capacity (L): ";
             cin >> fuelCapacity;
+            cout << endl;
         }
 
         void display() const override
         {
             displayBasic(); // Calling the basic display function
-            cout << ", Battery: " << batterySize << ", Fuel: " << fuelCapacity << endl; // Additional information unique to this class
+            cout << ", Battery: " << batterySize << " kWh" << ", Fuel: " << fuelCapacity << " L" << endl; // Additional information unique to this class
         }
 
 };
@@ -166,7 +170,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         int car_n_type;
-        cout << "Car " << (i+n) << " type: " << endl;
+        cout << "Car " << (i+1) << " type: " << endl;
         cout << "[1] Electric" << endl;
         cout << "[2] Gasoline" << endl;
         cout << "[3] Hybrid" << endl;
@@ -217,7 +221,7 @@ int main()
     }
 
     // Cleaning up
-    cout << "--- Cleaning up fleet ---" << endl;
+    cout << "\n--- Cleaning up fleet ---" << endl;
     for (int i = 0; i < n; i++)
     {
         delete cars[i];
